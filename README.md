@@ -1,8 +1,8 @@
 # Travelogue
 Android Application which serves as tourist assistant
 
-Travelogue folder contains Android code
-WcfService contains C# code which was used to program REST web service for different purposes.
+Travelogue folder contains Android code and 
+WcfService folder contains C# code which was used to program REST web service for different purposes.
 
 •	Created an Android application that assists tourist by suggesting nearby places to visit within Gujarat state of India, routes to and from, integration with Facebook to upload photos and status update, Geo-tagging photos, allows user to suggest new places.
 
