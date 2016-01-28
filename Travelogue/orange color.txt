@@ -1,0 +1,4 @@
+light orange-#DB4300
+dark orange-#B42B1B
+font color-#FDFDFF
+gray color-#7D7D7D

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Mohit\Desktop\travel" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/travelWcf.dll" publishTime="04/23/2014 00:18:49" />
+    <file relUrl="bin/travelWcf.pdb" publishTime="04/23/2014 00:18:48" />
+    <file relUrl="Web.config" publishTime="04/22/2014 07:15:46" />
+    <file relUrl="Service1.svc" publishTime="02/26/2014 16:18:36" />
+    <file relUrl="WebForm2.aspx" publishTime="04/18/2014 00:47:48" />
+    <file relUrl="WebForm1.aspx" publishTime="03/08/2014 16:55:08" />
+  </publishProfile>
+</publishData>

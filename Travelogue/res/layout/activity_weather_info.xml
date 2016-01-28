@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    tools:context=".WeatherInfo"
+    android:layout_margin="0dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_margin="0dp"
+        android:layout_weight="0.93"
+       
+        tools:context=".MainActivity" >
+    
+    <TextView
+        android:id="@+id/cityText"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">        
+    </TextView>
+
+    <TextView
+        android:id="@+id/temp"
+        android:text="T"
+        style="@style/tempStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_marginLeft="10dp">
+        <!-- android:layout_centerHorizontal="true" -->        
+    </TextView>
+    <TextView
+        android:id="@+id/unittemp"        
+        android:layout_width="wrap_content"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_toRightOf="@id/temp"
+        android:layout_alignBaseline="@id/temp">        
+    </TextView>
+
+    <TextView
+        android:id="@+id/skydesc"        
+        android:layout_width="wrap_content"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"        
+        android:layout_alignStart="@id/temp"
+        android:layout_toRightOf="@id/temp">
+    </TextView>
+    
+    <!--  Image weather condition -->
+    <ImageView android:id="@+id/condIcon"
+        		android:contentDescription="@string/weather_image"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignTop="@id/temp"
+                android:layout_toRightOf="@id/temp"/>
+
+    <TextView
+        android:id="@+id/press"
+        style="@style/valData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skydesc"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="pressure" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        style="@style/valData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/press"
+        android:layout_marginLeft="10dp"
+      	android:layout_marginTop="3dp"
+        android:text="Wind" />
+
+    <TextView
+        android:id="@+id/windDeg"
+        style="@style/valData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignBaseline="@+id/windSpeed"
+        android:layout_marginLeft="125dp"
+        android:layout_below="@+id/press"
+        android:text="Direction" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#E23D27"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:textColor="#fff" >
+        </android.support.v4.view.PagerTitleStrip>
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/hum"
+        style="@style/valData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/windSpeed"
+        android:layout_alignLeft="@+id/windDeg"
+        android:layout_marginLeft="30dp"
+        android:text="humidity" />
+
+</RelativeLayout>
+ 
+</LinearLayout>

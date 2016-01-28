@@ -1,0 +1,5 @@
+C:\Users\Mohit\Downloads\Compressed\19aprilTravelogue\24_4wcf,push\TraveloguePush\bin\SendPushInAndroid.dll
+C:\Users\Mohit\Downloads\Compressed\19aprilTravelogue\24_4wcf,push\TraveloguePush\bin\SendPushInAndroid.pdb
+C:\Users\Mohit\Downloads\Compressed\19aprilTravelogue\24_4wcf,push\TraveloguePush\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mohit\Downloads\Compressed\19aprilTravelogue\24_4wcf,push\TraveloguePush\obj\Debug\SendPushInAndroid.dll
+C:\Users\Mohit\Downloads\Compressed\19aprilTravelogue\24_4wcf,push\TraveloguePush\obj\Debug\SendPushInAndroid.pdb

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/srctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Source"
+        android:textColor="#9E0000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/totxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/srctxt"
+        android:layout_toRightOf="@+id/srctxt"
+        android:layout_marginLeft="15dp"
+        android:text="to"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/desttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totxt"
+        android:layout_alignBottom="@+id/totxt"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/totxt"
+        android:text="Destination"
+        android:textColor="#9E0000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/viatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/srctxt"
+        android:layout_below="@+id/desttxt"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="5dp"
+        android:text="Via"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/viaPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viatxt"
+        android:layout_alignBottom="@+id/viatxt"
+        android:layout_toRightOf="@+id/srctxt"
+        android:text="ViaPlace"
+        android:textColor="#FF6600"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/timetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/srctxt"
+        android:layout_alignBottom="@+id/srctxt"
+        android:layout_alignParentRight="true"
+        android:text="Time"
+        android:textColor="#FF6600"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

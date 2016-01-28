@@ -1,0 +1,10 @@
+E:\asp.net demos\SendPushInAndroid\SendPushInAndroid\bin\SendPushInAndroid.dll
+E:\asp.net demos\SendPushInAndroid\SendPushInAndroid\bin\SendPushInAndroid.pdb
+E:\asp.net demos\SendPushInAndroid\SendPushInAndroid\obj\Debug\ResolveAssemblyReference.cache
+E:\asp.net demos\SendPushInAndroid\SendPushInAndroid\obj\Debug\SendPushInAndroid.dll
+E:\asp.net demos\SendPushInAndroid\SendPushInAndroid\obj\Debug\SendPushInAndroid.pdb
+H:\Practical\SendPushIndotnet\SendPushIndotnet\SendPushInAndroid\SendPushInAndroid\bin\SendPushInAndroid.dll
+H:\Practical\SendPushIndotnet\SendPushIndotnet\SendPushInAndroid\SendPushInAndroid\bin\SendPushInAndroid.pdb
+H:\Practical\SendPushIndotnet\SendPushIndotnet\SendPushInAndroid\SendPushInAndroid\obj\Debug\ResolveAssemblyReference.cache
+H:\Practical\SendPushIndotnet\SendPushIndotnet\SendPushInAndroid\SendPushInAndroid\obj\Debug\SendPushInAndroid.dll
+H:\Practical\SendPushIndotnet\SendPushIndotnet\SendPushInAndroid\SendPushInAndroid\obj\Debug\SendPushInAndroid.pdb

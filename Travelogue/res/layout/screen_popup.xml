@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/popup_element"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#444444"
+android:orientation="vertical"
+android:padding="10sp" >
+
+<ImageButton
+    android:id="@+id/closeBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:onClick="ClosePop"
+    android:src="@drawable/close" />
+
+<TextView
+    android:id="@+id/txtView1"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="0sp"
+    android:minLines="7"
+    android:text="Hello,please fill this form in order to request for new place."
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#E23D27" />
+
+<TextView
+    android:id="@+id/txtView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1.Give your email id for any further contact" 
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#E23D27"/>
+
+<TextView
+    android:id="@+id/txtView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2.Give the name of place you want to add" 
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#E23D27"/>
+
+<TextView
+    android:id="@+id/txtView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3.Give a detailes description of place"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#E23D27" />
+
+<TextView
+    android:id="@+id/txtView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="4.Give the georaphic coordinates for the place"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#E23D27" />
+
+<TextView
+    android:id="@+id/txtView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your request will be verified and added to the appliaction."
+    android:textAppearance="?android:attr/textAppearanceMedium" 
+    android:textColor="#E23D27"/>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Notification will be sent when the place is added successfully to the application"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#E23D27" />
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travelogue"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.example.travelogue.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="com.example.travelogue.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.travelogue.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.travelogue.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.travelogue.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.travelogue.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.travelogue.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Places"
+            android:label="@string/title_activity_places" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Tour"
+            android:label="@string/title_activity_tour" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.PlaceDetail"
+            android:label="@string/title_activity_place_detail" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.WeatherInfo"
+            android:label="@string/title_activity_weather_info" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.CurrLoc"
+            android:label="@string/title_activity_curr_loc" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Facebookshare"
+            android:label="@string/title_activity_facebook_share" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDasoAwcssulm7qkwcUn5WE5pThkBLkRSw" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/appid" />
+
+        <activity
+            android:name="com.example.travelogue.Capture"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Routes"
+            android:label="@string/title_activity_routes" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.travelogue" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.travelogue.GCMIntentService" />
+
+        <activity android:name="com.facebook.LoginActivity" />
+        <activity
+            android:name="com.example.travelogue.FacebookLogin"
+            android:label="@string/title_activity_facebook_login" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Fb_selection"
+            android:label="@string/title_activity_fb_selection" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.PickerActivity"
+            android:label="@string/title_activity_picker" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.FacebookShare"
+            android:label="@string/title_activity_facebook_share" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.SelectionFragment"
+            android:label="@string/title_activity_selection" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Bus"
+            android:label="@string/title_activity_bus" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Train"
+            android:label="@string/title_activity_train" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.Transport"
+            android:label="@string/title_activity_transport" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.MenuTransport"
+            android:label="@string/title_activity_menu_transport" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.AboutUs"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="com.example.travelogue.AddPlace"
+            android:label="@string/title_activity_add_place" >
+        </activity>
+    </application>
+
+</manifest>
